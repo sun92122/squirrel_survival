@@ -1,0 +1,525 @@
+50
+
+0
+image squirrel_1.txt
+text-begin
+It's a bright clear winter day,
+and you have just awakened.
+Perched easily on the swaying branch,
+you sniff the breeze and decide
+it's time for breakfast.
+
+[h]  start the game
+text-end
+
+end
+
+1
+text-begin
+You could head for the nearby sycamore
+to look for seeds under the snow.
+Or you could strip the bark from the
+young birch trees for the sweet sap underneath.
+Or you could leap from tree to tree toward
+the pine woods and feast on pine cones.
+Winter days are short, so you better get moving.
+What do you choose?
+
+[a]  The pine woods?
+[b]  The sycamore tree?
+[c]  The birch tree?
+text-end
+
+goto a 10
+goto b 18
+goto c 2
+end
+
+2
+score 4
+text-begin
++4 Points
+Stripping the bark off trees is one of your passions-
+the sweet sap underneath is delicious.
+Have you had enough?
+Why not try the tender bark at the top of the tree?
+Ahead of you, the pine woods begin.
+You can see the cones,
+ripe amd waiting to be eaten.
+Why not have some?
+For something quite different,
+try the acorns down the hill to your right.
+Which do you choose?
+
+[a]  Pine cones?
+[b]  Tender bark?
+[c]  Acorns?
+text-end
+
+goto a 19
+goto b 11
+goto c 7
+end
+
+3
+score -6
+text-begin
+-6 Points
+No good.
+The pine marten did come all the way out to the end of the branch;
+and before you knew it, you were dead.
+Go back to page 1 and start again.
+
+Expert tip 
+Unlike some animals,
+red do not hibernate.
+They must go out and face the dangers
+of looking for food in winter.
+
+[a]  start again
+text-end
+
+goto a 1
+end
+
+4
+score 5
+text-begin
++5 Points
+You chase the unknown squirrel
+out of your area and then look around.
+Time for some nuts.
+
+Expert tip 
+There is always a "boss" in any squirrel area,
+generally the oldest and heaviest male;
+and he will not tolerate strange squirrels in his territory.
+
+[a]  continue
+text-end
+
+goto a 15
+end
+
+5
+score -5
+text-begin
+-5 Points
+You almost made it.
+You landed just short of the trees;
+and as you struggled through the snow to safety,
+the goshawk struck. 
+Go back to 1 and start again.
+
+Expert tip 
+Red squirrels are perfectly suited to life in the trees.
+On the ground they move slowly and are uncomfortable
+because of their long toes and long back legs.
+
+[a]  start again
+text-end
+
+goto a 1
+end
+
+6
+score 6
+text-begin
++6 Points
+You didn't even have time to start on
+the fungi before you were attacked by a weasel.
+If you hadn't been alerted by a tiny movement,
+you would be dead by now;
+but you managed to escape up the tree just in time. 
+
+Expert tip 
+With their large eyes on the sides of their heads,
+squirrels have excellent vision.
+They are color-blind but are extremely sensitive to movement.
+
+[a]  continue
+text-end
+
+goto a
+end
+
+7
+score 5
+text-begin
++5 Points
+You're on your way to look for acorns when you come
+across something deliciously sweet on the ground.
+There's a whole trail of it too.
+Just then you hear the chatter of another squirrel;
+there's a stranger in your area.
+Do you go and investigate?
+Or can you leave the intruder to the other squirrels?
+Didn't you hide some nuts here during the autumn?
+Why don't you search for them?
+What's your decision?
+
+[a]  Follow the trail?
+[b]  Look for some nuts?
+[c]  Investigate the stranger?
+text-end
+
+goto a 14
+goto b 8
+goto c 4
+end
+
+8
+score 2
+text-begin
++2 Points
+Turning the nut over and over in your forepaws,
+you know without opening it that it's no good.
+You look around for something else.
+You've got a few beechnuts buried nearby, 
+so you could dig them up; 
+and there's a delicious-looking clump of fungi right beside you. 
+Or you could head off for the pine woods half a mile away, 
+where your favorite pine cones are. 
+What do you decide?
+
+[a]  Dig up some beechnuts?
+[b]  Eat some fungi?
+[c]  Head for the pine woods?
+text-end
+
+goto a 20
+goto b 6
+goto c 12
+end
+
+9
+score 6
+text-begin
++6 Points
+Noticing a place where the ice is broken, 
+you stop to take a few sips of water from the lake. 
+A strange, sweet smell comes to you from those grains on your left. 
+You pause to listen and sniff the wind, but all is calm. 
+The smell is really delicious. 
+Why not see what it tastes like? 
+Then you remember that quite close-by 
+there is a garden which has a bird feeder table. 
+What do you think?
+
+[a]  On to the bird feeder table?
+[b]  Taste those grains?
+text-end
+
+goto a 17
+goto b 22
+end
+
+10
+score 5
+text-begin
++5 Points
+You've been happily playing in the pines, 
+eating the seeds from pine cone after pine cone, 
+when suddenly you feel the tree move. 
+A deadly enemy is beneath you - a pine marten. 
+What can you do? 
+Leap into the next tree to get away from him? 
+Or simply leap to the ground can you make it? 
+It's a very long jump. Hurry! 
+You're in real danger. Which way?
+
+[a]  Leap to the next tree?
+[b]  Leap to the ground?
+text-end
+
+goto a 16
+goto b 21
+end
+
+11
+score -7
+text-begin
+-7 Points
+The poacher spotted you as you climbed into view. 
+A blast of shotgun pellets hit you. 
+Go back to 1 and start again. 
+
+Expert tip 
+Although most states restrict squirrel hunting, 
+poachers sometimes kill squirrels out of season, 
+usually for food. 
+Unchecked hunting in an area can seriously endanger the squirrel population.
+
+[a]  start again
+text-end
+
+goto a 1
+end
+
+12
+score 6
+text-begin
++6 Points
+You have a happy time in the pine woods, 
+selecting and eating pine cones. 
+Stay in the pines for a while.
+
+Expert tip 
+How to eat a pine cone Holding the cone in your front paws, 
+turn it slowly, biting off each scale and picking out the seed. 
+As a squirrel, you can easily eat the seeds from 100 cones a day.
+
+[a]  continue
+text-end
+
+goto a 10
+end
+
+13
+score 6
+text-begin
++6 Points
+You landed safely in the beech trees, 
+clinging easily to the branches. 
+The pine marten could only look at you. 
+Take a deep breath and continue. 
+
+Expert tip 
+A squirrel can jump 18 feet or more. 
+It has special muscles in its tail which flatten it out. 
+This helps both in gliding and with balance as the squirrel lands.
+
+[a]  continue
+text-end
+
+goto a 9
+end
+
+14
+score -6
+text-begin
+-6 Points
+Foresters set traps for vermin of all kinds. 
+Unfortunately this one caught you. 
+Go back to 1 and start again. 
+
+Expert tip 
+The squirrel's main food is the seeds of trees, 
+but they also eat bark, sap, roots, fungi, bulbs, and scraps.
+
+[a]  start again
+text-end
+
+goto a 1
+end
+
+15
+score 5
+text-begin
++5 Points
+After that hectic chase, it's now quiet. 
+You dig up and eat a little store of nuts 
+which you smelled buried under the snow. 
+The days are short and the weather is cold, 
+and you need to find something else to eat. 
+You could look for food by the edge of the lake 
+and have a sip of water while you're there, 
+or you could search for some nuts you buried on the hillside last autumn. 
+Since it's so cold, why not go home and take a nap? 
+What do you decide? 
+
+[a]  Take a nap?
+[b]  Have a drink?
+[c]  Dig for the nuts?
+text-end
+
+goto a 23
+goto b 9
+goto c 8
+end
+
+16
+score -2
+text-begin
+-2 Points
+You leaped into the next tree,
+but the pine marten followed you and now is right on your heels.
+It's time for a new tactic.
+You could go out to the end of the branch;
+he might not follow you that far - you're much lighter than he is.
+Or you could leap for those beech trees - he'd never be able to do that
+but could you make it? 
+They are a long way off, but you're a great jumper. 
+Too far? What about jumping to this little pine tree right ahead of you?
+You could try that. Which do you choose?
+
+
+[a]  Leap for the beech trees?
+[b]  Out to the end of the branch?
+[c]  To the little pine?
+text-end
+
+goto a 13
+goto b 3
+goto c 15
+end
+
+17
+score 5
+text-begin
++5 Points
+You've just been eating the scraps that were intended for the birds. 
+You've been keeping an eye on that cat 
+and giving the squirrel's alarm call, chick, chick, chick, chirrrrrrrr, 
+and chattering your teeth angrily at it. 
+It hasn't gone away, so now you are going to have to move. 
+You're very full, 
+so why not just head for home and a nice quiet rest?
+Or you could head for the other side of the woods to look for acorns, 
+or you could go and strip bark from the birches. 
+But you'd better make a move soon, 
+or you're dead! 
+
+[a]  Look for acorms?
+[b]  Head for home?
+[c]  Strip bark from the birches?
+text-end
+
+goto a 7
+goto b 23
+goto c 2
+end
+
+18
+score -2
+text-begin
+-2 Points
+You are under attack! 
+It's a goshawk, diving down on you at high speed. 
+Quick-escape! If you could reach the clump of trees behind you, 
+you could easily get away-can you make it? 
+Or should you scamper around to hide on the other side of the tree trunk? 
+No time to think GO!
+
+
+[a]  Hide behind the tree?
+[b]  Leap for the clump of trees?
+text-end
+
+goto a 15
+goto b 5
+end
+
+19
+score 3
+text-begin
++3 Points
+You were very lucky. 
+The poacher saw you leaping up the pine tree but couldn't get a clear shot. 
+He shot anyway but missed.
+
+Expert tip 
+Squirrels can tell whether a nutshell 
+has something good inside without breaking it open. 
+If it's too light, the nut will be no good.
+
+[a]  continue
+text-end
+
+goto a 18
+end
+
+20
+score -6
+text-begin
+-6 Points
+You were very lucky. 
+The poacher saw you leaping up the pine tree 
+but couldn't get a clear shot. 
+He shot anyway but missed.
+
+Expert tip 
+Squirrels can tell whether a nutshell 
+has something good inside without breaking it open. 
+If it's too light, the nut will be no good.
+
+[a]  continue
+text-end
+
+goto a 10
+end
+
+21
+score 12
+text-begin
++12 Points
+You landed with a thump and escaped into the trees, 
+completely unhurt. Continue for an easier meal. 
+
+Expert tip 
+Squirrels have the incredible ability to leap 30 feet or more 
+down to the ground and walk away unharmed.
+
+[a]  continue
+text-end
+
+goto a 17
+end
+
+22
+score -6
+text-begin
+-6 Points
+The sweet-smelling grains were poison put down to kill pests, 
+but they killed you too. Go back to 1 and start again.
+
+Expert tip 
+Many squirrels are either shot, 
+trapped, or poisoned by man. 
+Others are run over by cars, 
+while many die of starvation.
+
+[a]  start again
+text-end
+
+goto a 1
+end
+
+23
+image squirrel_2.txt
+score 10
+text-begin
++10 Points
+It's been one of the most exciting days of your life - and you survived. 
+Your tummy is full, 
+and you can settle down in your warm nest for a well-earned rest. 
+Now add up all your SURVIVAL points to get your SURVIVAL score. 
+If you want to improve your score, 
+you can turn back to the beginning and make a new set of choices for 
+another completely different adventure in your life as a squirrel.
+
+[h]  start again
+[e]  end and check SURVIVAL score
+text-end
+
+end
+
+24
+
+text-begin
+Each time you turn the page, you score SURVIVAL points. 
+If you turn to a page you've been to before, you don't score anything. 
+Count your moves. Every time you turn the page, that's one move. 
+If two players have the same score, the one with fewer moves wins. 
+When you've achieved your best score, 
+you can challenge your friends to see if they can beat you.
+
+This book is adapted from "Survival Could You Be A SQUIRREL".
+google translation is hard enough ...
+
+[a]  continue
+text-end
+
+goto a 1
+
+end
